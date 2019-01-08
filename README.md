@@ -122,7 +122,11 @@ The results below are all with a batch size of 32.
 
 
 
-
+### 1050 Ti  (images/sec)
+| Precision   | vgg16    | resnet50   | nasnet   | alexnet   | densenet161 eval   | trivial  |
+|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|
+| Training    |  31.88      | 59.38       | 59.4           | 43.2          | 62.9ms             | 211.9ms             |
+| Evaluation      | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |
 
 
 
