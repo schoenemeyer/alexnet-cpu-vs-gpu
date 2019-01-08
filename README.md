@@ -82,10 +82,16 @@ totalMemory: 3.94GiB freeMemory: 3.63GiB
 2019-01-08 10:02:04.218553: Forward-backward across 100 steps, 0.315 +/- 0.001 sec / batch
 
 ```
+On average we see 135ms per batch, and the benchmark needs 56 sec to finish. 
+The optimized i7 tensorflow version takes 2965ms per batch, the whole benchmark needs 30minutes to run!
 
-135ms per batch 
+running multiple benchmarks, you should install torch
 
-The optimized i7 tensorflow version takes 2965ms per batch.
+```
+sudo curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
+```
+
+
 
 ### 1050 Ti
 | Precision   | vgg16 eval   | vgg16 train   | resnet152 eval   | resnet152 train   | densenet161 eval   | densenet161 train   |
