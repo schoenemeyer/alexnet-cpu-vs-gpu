@@ -1,5 +1,5 @@
-# alexnet-cpu-vs-gpu
-Performance of Alexnet Benchmark on CPU vs GPU
+# Convolutional Networks on GPUs
+Compare the performance of Convolution Networks like Resnet and Alexnet on CPUs vs GPUs
 
 
 # Purpose of this lab
@@ -124,7 +124,7 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 ### 1050 Ti  (images/sec)
 | Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Mobilenet | 
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
-| Training Mode  |        | 65.13      | 47.51          |            |               |               |     |   |
-| Eval+Training Mode     | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |    37.3  | 37.3  |
+| Training Mode  |    N/A    | 65.13      | 47.27          |     468.72       |      7872.39         |      6320.01         |   39.11  |   |
+| Eval+Training Mode     |         |        |            |             |              |              |     |    |
 
 
