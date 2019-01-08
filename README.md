@@ -109,11 +109,14 @@ total images/sec: 51.66
 
 
 ```
+TensorFlow CNN benchmarks contain benchmarks for several convolutional neural networks.
+The results below are all with a batch size of 32.
+
 
 ### 1050 Ti
-| Precision   | vgg16 eval   | vgg16 train   | resnet50   | densenet121 | alexnet eval   |   |
+| Precision   | vgg16 eval   | vgg16 train   | resnet50 train  | nasnet train | alexnet train   |   |
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|
-| 16-bit      | 39.3ms       | 33.1img/sec       | 59.4img/sec           |          | 355.8img/sec             | 211.9ms      |
+| 16-bit      | img/sec      | 33.1img/sec       | 59.4img/sec           |  43.2img/sec        | 355.8img/sec             |       |
 
 
 
