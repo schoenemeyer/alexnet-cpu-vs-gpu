@@ -87,6 +87,13 @@ totalMemory: 3.94GiB freeMemory: 3.63GiB
 
 The optimized i7 tensorflow version takes 2965ms per batch.
 
+### 1050 Ti
+| Precision   | vgg16 eval   | vgg16 train   | resnet152 eval   | resnet152 train   | densenet161 eval   | densenet161 train   |
+|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|
+| 32-bit      | 39.3ms       | 131.9ms       | 57.8ms           | 206.4ms           | 62.9ms             | 211.9ms             |
+| 16-bit      | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |
+
+
 
 
 
