@@ -116,7 +116,7 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 | Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Mobilenet | 
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
 | Training Mode  |  31.88      | 59.38       | 59.4           | 43.2          | 3653.7             | 5185.8             |  37.05  | 466.7 |
-| Eval+Training Mode     | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |    37.3  | 37.3  |
+| Eval+Training Mode     |         |         |            |             |             |        |      |    |
 
 
 -Batch size of 64
