@@ -111,9 +111,9 @@ total images/sec: 51.66
 ```
 
 ### 1050 Ti
-| Precision   | vgg16 eval   | vgg16 train   | resnet50   | resnet152 train synth sgd | alexnet eval   | densenet161 train   |
+| Precision   | vgg16 eval   | vgg16 train   | resnet50   | densenet121 | alexnet eval   |   |
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|
-| 16-bit      | 39.3ms       | 28.6img/sec       | 51.7img/sec           |          | 387.1img/sec             | 211.9ms      |
+| 16-bit      | 39.3ms       | 33.1img/sec       | 59.4img/sec           |          | 355.8img/sec             | 211.9ms      |
 
 
 
