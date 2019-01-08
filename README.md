@@ -119,6 +119,12 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 | Eval+Training Mode     | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |    37.3  | 37.3  |
 
 
+-Batch size of 64
 
+### 1050 Ti  (images/sec)
+| Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Mobilenet | 
+|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
+| Training Mode  |        | 65.13      | 47.51          |            |               |               |     |   |
+| Eval+Training Mode     | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |    37.3  | 37.3  |
 
 
