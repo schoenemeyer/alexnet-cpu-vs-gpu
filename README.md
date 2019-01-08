@@ -26,9 +26,11 @@ https://machinelearningmastery.com/setup-python-environment-machine-learning-dee
 
 Assumpation: 
 
-You followed the instructions in 
+You followed the instructions in https://github.com/schoenemeyer/CPUvsGPU-Performance-Test
+In short, you need your specific tensorflow version as well as the models repository from https://github.com/tensorflow/models.git
 
-In this lab we run the Alexnet benchmark
+In this lab we focus on the Alexnet benchmark
+https://www.tensorflow.org/guide/performance/benchmarks
 
 ```
 cd models/tutorials/image/alexnet
@@ -80,6 +82,12 @@ totalMemory: 3.94GiB freeMemory: 3.63GiB
 2019-01-08 10:02:04.218553: Forward-backward across 100 steps, 0.315 +/- 0.001 sec / batch
 
 ```
+
+135ms per batch 
+
+The optimized i7 tensorflow version takes 2965ms per batch.
+
+
 
 
 
