@@ -24,7 +24,7 @@ https://machinelearningmastery.com/setup-python-environment-machine-learning-dee
 
 # CPU vs GPU-Performance-Test
 
-Assumpation: 
+Assumption: 
 
 You followed the instructions in https://github.com/schoenemeyer/CPUvsGPU-Performance-Test
 In short, you need your specific tensorflow version as well as the models repository from https://github.com/tensorflow/models.git
@@ -124,7 +124,7 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 ### 1050 Ti  (images/sec)
 | Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Mobilenet | 
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
-| Training Mode  |    N/A    | 65.13      | 47.27          |     468.72       |      7872.39         |      6320.01         |   39.11  |   |
+| Training Mode  |    N/A    | 65.13      | 47.27          |     468.72       |      7872.39         |      6320.01         |   38.46  |   547.50  |
 | Eval+Training Mode     |         |        |            |             |              |              |     |    |
 
 
