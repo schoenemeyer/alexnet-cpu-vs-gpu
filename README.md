@@ -114,9 +114,9 @@ The results below are all with a batch size of 32.
 
 
 ### 1050 Ti
-| Precision   | vgg16 eval   | vgg16 train   | resnet50 train  | nasnet train | alexnet train   |   |
+| Precision   | vgg16 eval   | vgg16 train   | resnet50 train  | nasnet train | alexnet train   | trivial train  | lenet train 
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|
-| 16-bit      | img/sec      | 33.1img/sec       | 59.4img/sec           |  43.2img/sec        | 355.8img/sec             |       |
+| 16-bit      | img/sec      | 33.1img/sec       | 59.4img/sec           |  43.2img/sec        | 355.8img/sec             |  3653.7img/sec      | 
 
 
 
