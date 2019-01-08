@@ -85,19 +85,39 @@ totalMemory: 3.94GiB freeMemory: 3.63GiB
 On average we see 135ms per batch, and the benchmark needs 56 sec to finish. 
 The optimized i7 tensorflow version takes 2965ms per batch, the whole benchmark needs 30minutes to run!
 
-running multiple benchmarks, you should install torch
+running multiple benchmarks with tensorflow backend, it is probably more convenient to follow this github
+https://github.com/schoenemeyer/benchmarks
 
 ```
-sudo curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
+python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server
+Done warm up
+Step    Img/sec total_loss
+1       images/sec: 52.3 +/- 0.0 (jitter = 0.0) 8.169
+10      images/sec: 51.8 +/- 0.2 (jitter = 0.1) 7.593
+20      images/sec: 51.8 +/- 0.1 (jitter = 0.1) 7.696
+30      images/sec: 51.7 +/- 0.1 (jitter = 0.2) 7.753
+40      images/sec: 51.7 +/- 0.1 (jitter = 0.2) 8.007
+50      images/sec: 51.7 +/- 0.1 (jitter = 0.3) 7.520
+60      images/sec: 51.7 +/- 0.1 (jitter = 0.3) 7.989
+70      images/sec: 51.7 +/- 0.1 (jitter = 0.4) 8.028
+80      images/sec: 51.7 +/- 0.1 (jitter = 0.4) 7.930
+90      images/sec: 51.6 +/- 0.1 (jitter = 0.4) 7.853
+100     images/sec: 51.7 +/- 0.1 (jitter = 0.3) 7.797
+----------------------------------------------------------------
+total images/sec: 51.66
+----------------------------------------------------------------
+
+
 ```
-
-
 
 ### 1050 Ti
-| Precision   | vgg16 eval   | vgg16 train   | resnet152 eval   | resnet152 train   | densenet161 eval   | densenet161 train   |
+| Precision   | vgg16 eval   | vgg16 train   | resnet50   | resnet152 train synth  | densenet161 eval   | densenet161 train   |
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|
-| 32-bit      | 39.3ms       | 131.9ms       | 57.8ms           | 206.4ms           | 62.9ms             | 211.9ms             |
-| 16-bit      | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |
+| 32-bit      | 39.3ms       | 131.9ms       | 57.8ms           |   52img/s         | 62.9ms             | 211.9ms             |
+| 16-bit      | 33.5ms       | 117.6ms       | 46.9ms           |           | 50.1ms             | 191.0ms             |
+
+
+
 
 
 
