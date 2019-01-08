@@ -107,17 +107,16 @@ Step    Img/sec total_loss
 total images/sec: 51.66
 ----------------------------------------------------------------
 
-
 ```
 TensorFlow CNN benchmarks contain benchmarks for several convolutional neural networks.
-The results below are collected with a batch size of 32 using the SGD Optimizer and 16bit precision.
-
+The results below are collected with a batch size of 32 using the SGD Optimizer and 16-bit precision. Synthetic data is used.
+For the Eval+Training mode I used the option  --eval_during_training_every_n_steps with n=10. This has little impact on performance.
 
 ### 1050 Ti  (images/sec)
-| Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  trivial  |
-|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|
-| Training Mode  |  31.88      | 59.38       | 59.4           | 43.2          | 3653.7             | 5185.8             |  37  |
-| Evaluation Mode     | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |    x  |
+| Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Inception3  | 
+|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
+| Training Mode  |  31.88      | 59.38       | 59.4           | 43.2          | 3653.7             | 5185.8             |  37.05  | 37.05  |
+| Eval+Training Mode     | 33.5ms       | 117.6ms       | 46.9ms           | 193.5ms           | 50.1ms             | 191.0ms             |    37.3  | 37.3  |
 
 
 
