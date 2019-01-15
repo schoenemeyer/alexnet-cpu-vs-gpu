@@ -9,8 +9,6 @@ Evaluate the deep learning capabilities of desktop computers using NVIDIA Geforc
 
 # Tested machines
 
-- CPU-only: Lenovo Ideapad 1 x AMD A6-7310 APU with AMD Radeon R4 Graphics and 16GB RAM running under CENTOS7.4   
-- CPU-only: Lenovo Notebook Yoga 500 - 15ISK with 1x i5-6200U CPU Linux running with Ubuntu Subsystem ( 4.4.0-17134-Microsoft #471-Microsoft Fri Dec 07 20:04:00 PST 2018 x86_64 x86_64 x86_64 GNU/Linux ); Host OS Windows 10 HOME, Build 1803.   
 - CPU-only: Microsoft Surface 2 Notebook with 1x i7-8650 CPU CPU Linux running with Ubuntu Subsystem
 - GPU equipped Workstation 1 x AMD FX-6300 6c with 1 x NVIDIA GTX 1050Ti running under CentOS 7.4, 16GB RAM, CUDA 9.1 and NVIDIA Driver 390.87. The GPU has 768 cores running with 1.3 GHz and comes with 4 GB GDDR5. The underlying architecture is Pascal.    
 
@@ -30,7 +28,9 @@ You followed the instructions in https://github.com/schoenemeyer/CPUvsGPU-Perfor
 In short, you need your specific tensorflow version as well as the models repository from https://github.com/tensorflow/models.git
 
 In this lab we focus on the Alexnet benchmark
-https://www.tensorflow.org/guide/performance/benchmarks
+https://www.tensorflow.org/guide/performance/benchmarks 
+
+Running the Alexnet Benchmark on the GPU equipped Workstation 1 x AMD FX-6300 6c with 1 x NVIDIA GTX 1050Ti yields a much higer performance compared the i7 platform.
 
 ```
 cd models/tutorials/image/alexnet
