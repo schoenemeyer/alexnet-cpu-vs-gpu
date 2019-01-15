@@ -87,7 +87,12 @@ The optimized i7 tensorflow version takes 2965ms per batch, the whole benchmark 
 
 If you want to compare differnet CNNs with tensorflow backend such as Densenet or Resnet, it is probably more convenient to follow this github
 https://github.com/schoenemeyer/benchmarks
-This shows the command how to run it:
+
+In order to see the full options, you can run:
+```
+python tf_cnn_benchmarks.py --help
+```
+An example how to run:
 ```
 python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server
 Done warm up
