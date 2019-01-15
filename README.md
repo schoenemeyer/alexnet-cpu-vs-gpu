@@ -85,9 +85,9 @@ totalMemory: 3.94GiB freeMemory: 3.63GiB
 On average we see 135ms per batch, and the benchmark needs 56 sec to finish. 
 The optimized i7 tensorflow version takes 2965ms per batch, the whole benchmark needs 30minutes to run!
 
-running multiple benchmarks with tensorflow backend, it is probably more convenient to follow this github
+If you want to compare differnet CNNs with tensorflow backend such as Densenet or Resnet, it is probably more convenient to follow this github
 https://github.com/schoenemeyer/benchmarks
-
+This shows the command how to run it:
 ```
 python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server
 Done warm up
