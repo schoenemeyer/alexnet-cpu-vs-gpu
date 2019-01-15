@@ -126,4 +126,6 @@ If we repeat the same runs, but with batch size of 64 we get these figures:
 | Training Mode  |    N/A    | 65.13      | 47.27          |     468.72       |      7872.39         |      6320.01         |   38.46  |   555.2  |
 | Eval+Training Mode     |         |        |            |             |              |              |     |    |
 
+If you compare with some figures in https://www.tensorflow.org/guide/performance/benchmarks you will notice that the performance is very close to a NVIDIA Tesla K80 card. 
+
 
