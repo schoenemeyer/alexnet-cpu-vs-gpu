@@ -115,27 +115,20 @@ total images/sec: 51.66
 ```
 TensorFlow CNN benchmarks contain benchmarks for several convolutional neural networks.
 The results below are collected with a batch size of 32 using the SGD Optimizer and 16-bit precision. Synthetic data is used.
-For the Eval+Training mode I used the option  --eval_during_training_every_n_steps with n=10. This has little impact on performance.
+For the Eval+Training mode I used the option  --eval_during_training_every_n_steps with n=10. This has little impact on performance. 
+Precision: fp16
+Dataset: Synthetic   
 
 ### 1050 Ti  (images/sec)
 | Precision   | InceptionV3   | ResNet-50   | VGG16   | Alexnet   | Nasnet   | 
 |:--------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
-| 16  |  34      | 52       | 28           | 386          | 41            | 
-| 16  |  34      | 52       | 28           | 386          | 41            | 
-| 16  |  34      | 52       | 28           | 386          | 41            | 
-| Optimizer |  34      | 52       | 28           | 386          | 41            | 
+| 16  |  34      |   54    | 29          | 213          | 38            | 
+| 32 |  37      | 62      | 33          | 386          | 41            | 
+| 64 |  39      | 65       | 30          | 466          | 44            | 
+| Optimizer |  sgd      | sgd        | sgd            | sgd           | sgd            | 
 
 <img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="352"> <img> 
 
-
-
-If we repeat the same runs, but with batch size of 64 we get these figures:
-
-### 1050 Ti  (images/sec)
-| Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Mobilenet | 
-|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
-| Training Mode  |    N/A    | 65.13      | 47.27          |     468.72       |      7872.39         |      6320.01         |   38.46  |   555.2  |
-| Eval+Training Mode     |         |        |            |             |              |              |     |    |
 
 If you compare with some figures in https://www.tensorflow.org/guide/performance/benchmarks you will notice that the performance is very close to a NVIDIA Tesla K80 card. 
 
