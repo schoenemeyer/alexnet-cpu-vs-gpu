@@ -1,17 +1,18 @@
-# Convolutional Networks on GPUs
-Compare the performance of Convolution Networks like Resnet and Alexnet on CPUs vs GPUs
+# Running Convolutional Networks on NVIDIA GeForce GPUs
 
-
-# Purpose of this lab
-
-Evaluate the deep learning capabilities of desktop computers using NVIDIA Geforce GPU Engine. 
-
+In this experiment I tested the performance of Convolution Networks like Resnet and Alexnet on CPUs vs GPUs
 
 # Tested machines
 
-- CPU-only: Microsoft Surface 2 Notebook with 1x i7-8650 CPU CPU Linux running with Ubuntu Subsystem
-- GPU equipped Workstation 1 x AMD FX-6300 6c with 1 x NVIDIA GTX 1050Ti running under CentOS 7.4, 16GB RAM, CUDA 9.1 and NVIDIA Driver 390.87. The GPU has 768 cores running with 1.3 GHz and comes with 4 GB GDDR5. The underlying architecture is Pascal.    
+- CPU-only:   
+Microsoft Surface 2 Notebook with 1x i7-8650 CPU CPU Linux running with Ubuntu Subsystem
+- GPU equipped Workstation:   
+1 x AMD FX-6300 6c with 1 x NVIDIA GTX 1050Ti running under CentOS 7.4, 
+16GB RAM, 
+CUDA Toolkit 9.1
+NVIDIA Driver 390.87. 
 
+The NVIDIA GTX 1050Ti comes with 768 cores running with 1.3 GHz and has 4 GB GDDR5. The underlying architecture is Pascal.    
 For this lab you have installed python and tensorflow correctly on the platform. For this benchmark I used these versions     
 - Python 2.7.12   
 - Keras 2.2.4  
@@ -127,7 +128,7 @@ Dataset: Synthetic
 | 64 |  39      | 65       | 30          | 466          | 44            | 
 | Optimizer |  sgd      | sgd        | sgd            | sgd           | sgd            | 
 
-<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="352"> <img> 
+<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="452"> <img> 
 
 
 If you compare with some figures in https://www.tensorflow.org/guide/performance/benchmarks you will notice that the performance is very close to a NVIDIA Tesla K80 card. 
