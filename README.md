@@ -120,7 +120,9 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 ### 1050 Ti  (images/sec)
 | Precision   | InceptionV3   | ResNet-50   | VGG16   | Alexnet   | Nasnet   | 
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
-| 16  |  31.88      | 59.38       | 59.4           | 43.2          | 3653.7             | 
+| 16  |  34      | 52       | 28           | 386          | 41            | 
+
+https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png
 
 
 If we repeat the same runs, but with batch size of 64 we get these figures:
