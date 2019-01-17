@@ -120,7 +120,7 @@ Precision: fp16
 Dataset: Synthetic   
 
 ### 1050 Ti  (images/sec)
-| Precision   | InceptionV3   | ResNet-50   | VGG16   | Alexnet   | Nasnet   | 
+| Batchsize   | InceptionV3   | ResNet-50   | VGG16   | Alexnet   | Nasnet   | 
 |:--------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
 | 16  |  34      |   54    | 29          | 213          | 38            | 
 | 32 |  37      | 62      | 33          | 386          | 41            | 
