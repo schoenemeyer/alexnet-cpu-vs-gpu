@@ -118,10 +118,10 @@ The results below are collected with a batch size of 32 using the SGD Optimizer 
 For the Eval+Training mode I used the option  --eval_during_training_every_n_steps with n=10. This has little impact on performance.
 
 ### 1050 Ti  (images/sec)
-| Precision   | vgg16    | resnet50   | nasnet   | alexnet   | lenet   | trivial  |  Inception3  | Mobilenet | 
-|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|:--------------------|:--------------------|:--------------------|
-| Training Mode  |  31.88      | 59.38       | 59.4           | 43.2          | 3653.7             | 5185.8             |  37.05  | 466.7 |
-| Eval+Training Mode     |         |         |            |             |             |        |      |    |
+| Precision   | InceptionV3   | ResNet-50   | VGG16   | Alexnet   | Nasnet   | 
+|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
+| 16  |  31.88      | 59.38       | 59.4           | 43.2          | 3653.7             | 
+
 
 If we repeat the same runs, but with batch size of 64 we get these figures:
 
