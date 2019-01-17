@@ -122,7 +122,8 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 |:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
 | 16  |  34      | 52       | 28           | 386          | 41            | 
 
-https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png
+<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="252"> <img 
+
 
 
 If we repeat the same runs, but with batch size of 64 we get these figures:
