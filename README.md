@@ -113,9 +113,8 @@ total images/sec: 51.66
 ----------------------------------------------------------------
 
 ```
-TensorFlow CNN benchmarks contain benchmarks for several convolutional neural networks.
-The results below are collected with a batch size of 32 using the SGD Optimizer and 16-bit precision. Synthetic data is used.
-For the Eval+Training mode I used the option  --eval_during_training_every_n_steps with n=10. This has little impact on performance.    
+The scripts allow to run benchmarks contain benchmarks for several convolutional neural networks.   
+
 Precision: fp16     
 Dataset: Synthetic   
 
