@@ -133,4 +133,7 @@ If you compare with some figures in https://www.tensorflow.org/guide/performance
 <img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32-k80.png" width="580"> <img> 
 
 Going to a professional P100 Tesla card gives of course a much better performance
+<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32-p100.png" width="580"> <img> 
+
+
 
