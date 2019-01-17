@@ -127,7 +127,7 @@ Dataset: Synthetic
 | 64 |  39      | 65       | 30          | 466          | 44            | 
 | Optimizer |  sgd      | sgd        | sgd            | sgd           | sgd            | 
 
-<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="552"> <img> 
+<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="600"> <img> 
 
 
 If you compare with some figures in https://www.tensorflow.org/guide/performance/benchmarks you will notice that the performance is very close to a NVIDIA Tesla K80 card. 
