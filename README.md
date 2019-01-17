@@ -1,6 +1,6 @@
-# Running Convolutional Networks on NVIDIA GeForce GPUs
+# Running Benchmarks with Tensorflow backend on NVIDIA GeForce GPUs
 
-In this experiment I tested the performance of Convolution Networks like Resnet and Alexnet on CPUs vs GPUs
+In this experiment I tested the performance of Convolution Networks like Resnet and Alexnet on CPUs vs GPUs. This benchmark is also a useful test, whether the GPU on your system is running correctly.
 
 # Tested machines
 
