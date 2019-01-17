@@ -119,10 +119,10 @@ For the Eval+Training mode I used the option  --eval_during_training_every_n_ste
 
 ### 1050 Ti  (images/sec)
 | Precision   | InceptionV3   | ResNet-50   | VGG16   | Alexnet   | Nasnet   | 
-|:------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
+|:--------------|:-------------|:--------------|:-----------------|:------------------|:-------------------|
 | 16  |  34      | 52       | 28           | 386          | 41            | 
 
-<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="252"> <img 
+<img src="https://github.com/schoenemeyer/convolution-cpu-vs-gpu/blob/master/tensorflow1-bs32.png" width="352"> <img> 
 
 
 
